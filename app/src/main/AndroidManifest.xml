@@ -22,6 +22,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".Friend_list"
+            />
     </application>
 
 </manifest>

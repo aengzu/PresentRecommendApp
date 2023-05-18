@@ -3,9 +3,13 @@
     <style name="Base.Theme.MyApplication" parent="Theme.AppCompat.Light">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication">
+
+    </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
 
 </resources>

@@ -19,8 +19,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -61,7 +60,7 @@
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="220dp"
-                android:layout_height="170dp"
+                android:layout_height="220dp"
                 android:layout_gravity="center"
                 android:background="#1ADADADA"
                 android:drawablePadding="20dp"
@@ -86,7 +85,7 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="match_parent"
 
             android:stretchColumns="1">
 
@@ -107,7 +106,7 @@
                     android:paddingRight="15dp"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-                <ImageButton
+                <Button
                     android:id="@+id/view8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -118,6 +117,7 @@
                     android:padding="10dip"
 
                     android:paddingLeft="20dp"
+                    android:text="일단 이거누르면 친구목록"
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </TableRow>
