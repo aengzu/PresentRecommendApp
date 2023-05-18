@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#26C6C6C6"
+    android:background="#4DDADADA"
     android:paddingLeft="20dp"
     android:paddingTop="20dp"
     android:paddingRight="20dp"
@@ -12,20 +12,19 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="330dp"
-        android:background="#26C6C6C6"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="630dp"
 
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100000024">
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:gravity="center|center_horizontal"
             android:orientation="vertical">
 
@@ -34,11 +33,12 @@
                 style="@android:style/Widget.TextView.SpinnerItem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="두근두근"
                 android:fontFamily="@font/nanumsquareroundl"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:text="두근두근"
                 android:textColor="#FB564A"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -49,44 +49,44 @@
                 android:fontFamily="@font/nanumsquareroundb"
                 android:gravity="center"
                 android:text="선물 추천"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/imageButton"
-                android:layout_width="300dp"
-                android:layout_height="240dp"
+                android:layout_width="220dp"
+                android:layout_height="170dp"
                 android:layout_gravity="center"
-                android:background="#26C6C6C6"
-                android:drawablePadding="10dp"
+                android:background="#1ADADADA"
+                android:drawablePadding="20dp"
+                android:paddingTop="10dp"
                 android:scaleType="centerInside"
                 app:srcCompat="@drawable/giftbox"
                 tools:ignore="SpeakableTextPresentCheck" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquareroundr"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="선물 박스 누르고 선물 추천 받으러 가기"
+                android:textColor="#FB564A"
+                android:textColorLink="#663FB8"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:text="선물 박스 누르고 선물 추천 받으러 가기"
-            android:textColor="#FB564A"
-            android:textColorLink="#663FB8"
-            android:fontFamily="@font/nanumsquareroundr"
-            android:textStyle="bold" />
+        </LinearLayout>
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="320dp"
+            android:layout_height="300dp"
 
             android:stretchColumns="1">
 
@@ -101,7 +101,7 @@
                     android:layout_margin="6dip"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
-                    android:background="@drawable/main_view1"
+                    android:background="@drawable/main_box"
                     android:padding="20dip"
 
                     android:paddingRight="15dp"
@@ -114,7 +114,7 @@
                     android:layout_margin="6dip"
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
-                    android:background="@drawable/main_view2"
+                    android:background="@drawable/main_box"
                     android:padding="10dip"
 
                     android:paddingLeft="20dp"
@@ -132,7 +132,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="6dip"
                     android:layout_weight="1"
-                    android:background="@drawable/main_view3"
+                    android:background="@drawable/main_box"
                     android:padding="10dip"
                     tools:ignore="SpeakableTextPresentCheck"
 
@@ -144,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="6dip"
                     android:layout_weight="1"
-                    android:background="@drawable/main_view4"
+                    android:background="@drawable/main_box"
                     android:padding="10dip"
                     android:text=""
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -153,21 +153,5 @@
         </TableLayout>
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:drawablePadding="10dp"
-        android:scaleType="centerInside"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39"
-        app:srcCompat="@drawable/giftbox" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
