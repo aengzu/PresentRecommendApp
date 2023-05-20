@@ -32,7 +32,7 @@
                 style="@android:style/Widget.TextView.SpinnerItem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/nanumsquareroundl"
+                android:fontFamily="@font/nanumsquareroundeb"
                 android:gravity="center"
                 android:paddingBottom="5dp"
                 android:text="두근두근 !"
@@ -116,10 +116,12 @@
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:padding="10dip"
+                    android:drawableBottom="@drawable/theme"
 
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:padding="10dip"
                     android:paddingLeft="20dp"
-                    android:text="일단 이거누르면 친구목록"
+                    android:text="테마별\n선물 보기"
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </TableRow>
@@ -136,11 +138,11 @@
 
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:drawableBottom="@drawable/bg_icon"
+                    android:drawableBottom="@drawable/big_ht"
                     android:fontFamily="@font/nanumsquareroundb"
                     android:padding="10dip"
                     android:paddingLeft="20dp"
-                    android:text="밸런스 게임으로\n상대 취향 알아내기"
+                    android:text="찜한 상품\n보기"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <Button
@@ -151,10 +153,12 @@
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:padding="10dip"
+                    android:drawableBottom="@drawable/ranking"
 
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:padding="10dip"
                     android:paddingLeft="20dp"
-                    android:text="일단 이거누르면 친구목록"
+                    android:text="선물 랭킹\n보러 가기"
                     tools:ignore="SpeakableTextPresentCheck" />
             </TableRow>
 
