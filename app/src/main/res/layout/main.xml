@@ -101,11 +101,12 @@
 
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:drawableBottom="@drawable/bg_icon"
+                    android:drawableBottom="@drawable/vs3"
                     android:fontFamily="@font/nanumsquareroundb"
                     android:padding="10dip"
                     android:paddingLeft="20dp"
                     android:text="밸런스 게임으로\n상대 취향 알아내기"
+                    android:textSize="14sp"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <Button
@@ -116,12 +117,12 @@
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:drawableBottom="@drawable/theme"
+                    android:drawableBottom="@drawable/rou5"
 
                     android:fontFamily="@font/nanumsquareroundb"
                     android:padding="10dip"
                     android:paddingLeft="20dp"
-                    android:text="테마별\n선물 보기"
+                    android:text="미니 게임\n하러 가기"
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </TableRow>
