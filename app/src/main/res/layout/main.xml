@@ -32,10 +32,10 @@
                 style="@android:style/Widget.TextView.SpinnerItem"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/nanumsquareroundl"
+                android:fontFamily="@font/nanumsquareroundeb"
                 android:gravity="center"
                 android:paddingBottom="5dp"
-                android:text="두근두근"
+                android:text="두근두근 !"
                 android:textColor="#FB564A"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -58,7 +58,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/box_img"
                 android:layout_width="220dp"
                 android:layout_height="220dp"
                 android:layout_gravity="center"
@@ -76,7 +76,7 @@
                 android:fontFamily="@font/nanumsquareroundr"
                 android:gravity="center_horizontal"
                 android:paddingTop="10dp"
-                android:text="선물 박스 누르고 선물 추천 받으러 가기"
+                android:text="선물 박스 누르고 선물 추천 받으러 가기~"
                 android:textColor="#FB564A"
                 android:textColorLink="#663FB8"
                 android:textStyle="bold" />
@@ -93,17 +93,20 @@
                 android:layout_width="355dp"
                 android:layout_weight="1">
 
-                <ImageButton
-                    android:id="@+id/view9"
+                <Button
+                    android:id="@+id/bg"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dip"
-                    android:layout_marginRight="20dp"
+
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:padding="20dip"
-
-                    android:paddingRight="15dp"
+                    android:drawableBottom="@drawable/vs3"
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:padding="10dip"
+                    android:paddingLeft="20dp"
+                    android:text="밸런스 게임으로\n상대 취향 알아내기"
+                    android:textSize="14sp"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <Button
@@ -114,10 +117,12 @@
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:padding="10dip"
+                    android:drawableBottom="@drawable/rou5"
 
+                    android:fontFamily="@font/nanumsquareroundb"
+                    android:padding="10dip"
                     android:paddingLeft="20dp"
-                    android:text="일단 이거누르면 친구목록"
+                    android:text="미니 게임\n하러 가기"
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </TableRow>
@@ -126,27 +131,35 @@
                 android:layout_width="359dp"
                 android:layout_weight="1">
 
-                <ImageButton
-                    android:id="@+id/view10"
-                    android:layout_width="0dip"
+                <Button
+                    android:id="@+id/bg2"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dip"
+
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
+                    android:drawableBottom="@drawable/big_ht"
+                    android:fontFamily="@font/nanumsquareroundb"
                     android:padding="10dip"
-                    tools:ignore="SpeakableTextPresentCheck"
+                    android:paddingLeft="20dp"
+                    android:text="찜한 상품\n보기"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
-                    />
-
-                <ImageButton
-                    android:id="@+id/view11"
-                    android:layout_width="0dip"
+                <Button
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dip"
+                    android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
+                    android:drawableBottom="@drawable/ranking"
+
+                    android:fontFamily="@font/nanumsquareroundb"
                     android:padding="10dip"
-                    android:text=""
+                    android:paddingLeft="20dp"
+                    android:text="선물 랭킹\n보러 가기"
                     tools:ignore="SpeakableTextPresentCheck" />
             </TableRow>
 

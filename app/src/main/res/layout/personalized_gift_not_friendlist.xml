@@ -7,7 +7,7 @@
 
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/main_text"
         android:layout_width="355dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/nanumsquareroundeb"
@@ -31,38 +31,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/main_text"
         app:layout_constraintVertical_bias="0.063"
         app:srcCompat="@drawable/line" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/friendlist_n"
         android:layout_width="360dp"
-        android:layout_height="150dp"
-        android:background="@drawable/go_button2"
+        android:layout_height="130dp"
+        android:background="@drawable/go_but2"
         android:fontFamily="@font/nanumsquareroundeb"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="left|center_vertical"
         android:scaleType="centerCrop"
+        android:text="    직접 정보 고르고\n    맞춤형 선물 받기"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.43" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/go_button2"
+        android:layout_width="360dp"
+        android:layout_height="130dp"
+        android:background="@drawable/go_but2_1"
         android:fontFamily="@font/nanumsquareroundeb"
+        android:text="밸런스 게임으로\n상대방 취향\n알아내기"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.74" />
+        app:layout_constraintVertical_bias="0.741" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
