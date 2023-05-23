@@ -94,7 +94,7 @@
                 android:layout_weight="1">
 
                 <Button
-                    android:id="@+id/bg"
+                    android:id="@+id/bg_btn"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dip"
@@ -110,7 +110,7 @@
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <Button
-                    android:id="@+id/view8"
+                    android:id="@+id/mg_bt"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dip"
@@ -132,7 +132,7 @@
                 android:layout_weight="1">
 
                 <Button
-                    android:id="@+id/bg2"
+                    android:id="@+id/heart_btn"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dip"
@@ -147,7 +147,7 @@
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <Button
-                    android:id="@+id/view"
+                    android:id="@+id/ranking_btn"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dip"

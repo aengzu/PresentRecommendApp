@@ -38,7 +38,7 @@
             android:lineSpacingExtra="10dp"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
-            android:text="친구에게 받고 싶은 선물을     3가지 이상 골라주세요."
+            android:text="친구에게 받고 싶은 선물을 3가지 이상 골라주세요."
             android:textSize="24sp" />
     </LinearLayout>
 
