@@ -17,34 +17,34 @@
         app:layout_constraintVertical_bias="0.25">
 
         <TextView
-            android:id="@+id/textView5"
-            android:layout_width="300dp"
+            android:id="@+id/main_text"
+            android:layout_width="344dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:fontFamily="@font/nanumsquareroundeb"
             android:lineSpacingExtra="15dp"
-            android:text="선물 받을 사람은 누구인가요?"
+            android:text="선물 받을\n사람은 누구인가요?"
             android:textColor="#000000"
-            android:textSize="40sp" />
+            android:textSize="29sp" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="60dp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/friendlist_y"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/go_button"
+            android:layout_height="100dp"
+            android:background="@drawable/fly"
             android:fontFamily="@font/nanumsquareroundeb"
             android:text="   친구 목록에서 고르기"
             android:textSize="25sp" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/friendlist_n"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/go_button"
+            android:layout_height="100dp"
+            android:background="@drawable/fln"
             android:fontFamily="@font/nanumsquareroundeb"
             android:text="친구 목록에 없어요"
             android:textSize="25sp" />
@@ -55,10 +55,10 @@
         android:id="@+id/imageView"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:tint="#80FFFFFF"
+        android:alpha="0.4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
