@@ -43,5 +43,3 @@ public class heartpage extends AppCompatActivity {
         mRecyclerAdapter.setProductList(mProductItems);
     }
 }
-
-
