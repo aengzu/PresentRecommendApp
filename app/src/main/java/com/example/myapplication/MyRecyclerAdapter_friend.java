@@ -11,19 +11,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.ViewHolder> {
+public class MyRecyclerAdapter_friend extends RecyclerView.Adapter<MyRecyclerAdapter_friend.ViewHolder> {
 
     private ArrayList<FriendItem> mFriendList;
 
     @NonNull
     @Override
-    public MyRecyclerAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recyclerview, parent, false);
+    public MyRecyclerAdapter_friend.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.friend_recyclerview, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyRecyclerAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyRecyclerAdapter_friend.ViewHolder holder, int position) {
         holder.onBind(mFriendList.get(position));
     }
 

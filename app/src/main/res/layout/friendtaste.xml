@@ -18,7 +18,7 @@
             android:id="@+id/imageView12"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@drawable/myIcon"/>
+            android:background="@drawable/user_list"/>
 
         <TextView
             android:layout_marginLeft="15dp"

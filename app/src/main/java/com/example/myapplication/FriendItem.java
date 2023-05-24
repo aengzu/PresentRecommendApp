@@ -1,5 +1,8 @@
 package com.example.myapplication;
 
+
+// 친구 요소
+// 데베 구축 및 연동 필요
 public class FriendItem {
     String name;
     String message;

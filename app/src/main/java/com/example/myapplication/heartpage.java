@@ -8,22 +8,21 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-
-// 친구 목록 클래스 - 수정해야함
-public class Friend_list extends AppCompatActivity {
+//찜 페이지
+public class heartpage extends AppCompatActivity {
     private RecyclerView mRecyclerView;
-    private MyRecyclerAdapter_friend mRecyclerAdapter;
-    private ArrayList<FriendItem> mfriendItems;
+    private MyRecyclerAdapter_heart mRecyclerAdapter;
+    private ArrayList<ProductItem> mProductItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.friend_list);
+        setContentView(R.layout.heart_page);
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        mRecyclerView = (RecyclerView) findViewById(R.id.heart_recyclerView);
 
         /* initiate adapter */
-        mRecyclerAdapter = new MyRecyclerAdapter_friend();
+        mRecyclerAdapter = new MyRecyclerAdapter_heart();
 
         /* initiate recyclerview */
         mRecyclerView.setAdapter(mRecyclerAdapter);
@@ -31,14 +30,18 @@ public class Friend_list extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL,false));
 
         /* adapt data */
-        mfriendItems = new ArrayList<>();
+        mProductItems = new ArrayList<>();
+
+        //데이터베이스에서 정보가져와야함
         for(int i=1;i<=10;i++){
             if(i%2==0)
-                mfriendItems.add(new FriendItem(R.drawable.circle_active,i+"번째 사람",i+"번째 상태메시지"));
+                mProductItems.add(new ProductItem(R.drawable.text_product_img,"brand", "name", 999));
             else
-                mfriendItems.add(new FriendItem(R.drawable.circle_active,i+"번째 사람",i+"번째 상태메시지"));
+                mProductItems.add(new ProductItem(R.drawable.text_product_img,"brand","nam", 999));
 
         }
-        mRecyclerAdapter.setFriendList(mfriendItems);
+        mRecyclerAdapter.setProductList(mProductItems);
     }
 }
+
+

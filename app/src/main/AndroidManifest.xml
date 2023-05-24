@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".Friend_list"
+        <activity android:name=".heartpage"
             />
     </application>
 
