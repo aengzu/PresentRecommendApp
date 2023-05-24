@@ -73,4 +73,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    public void changeScreen(View view) {
+        Intent intent = new Intent(this, BaseActivity.class);
+        startActivity(intent);
+    }
 }
