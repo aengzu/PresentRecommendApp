@@ -40,7 +40,7 @@
         android:textSize="13sp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/link_btn"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginLeft="3dp"
@@ -53,7 +53,7 @@
         android:textSize="10dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/kakao_btn"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_marginLeft="3dp"
