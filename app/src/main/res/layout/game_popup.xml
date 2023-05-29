@@ -36,7 +36,7 @@
         android:gravity="center"
         android:inputType="text"
         android:singleLine="false"
-        android:text="www.abcdefg.com"
+        android:text="https://hwaiiteam.com/"
         android:textSize="13sp" />
 
     <Button

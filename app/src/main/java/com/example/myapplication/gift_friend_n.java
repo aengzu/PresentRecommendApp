@@ -21,7 +21,7 @@ public class gift_friend_n extends AppCompatActivity {
         findViewById(R.id.make_g).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog01(); // 아래 showDialog01() 함수 호출
+                //showDialog01(); // 아래 showDialog01() 함수 호출
             }
         });
 

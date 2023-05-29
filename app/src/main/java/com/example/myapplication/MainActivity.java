@@ -48,6 +48,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        bg_box.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //미니게임 관련 자바클래스 만들고 수정하기
+                Intent intent = new Intent(getApplicationContext(), BalanceGame.class);
+                startActivity(intent);
+            }
+        });
+
         // 친구 목록 페이지 이동 이벤트
         ranking_box.setOnClickListener(new View.OnClickListener() {
             @Override
