@@ -29,6 +29,7 @@
         <activity android:name=".giftBox" />
         <activity android:name=".gift_friend_n" />
         <activity android:name=".BalanceGame" />
+        <activity android:name=".friendlist" />
     </application>
 
 </manifest>
