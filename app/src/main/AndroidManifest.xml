@@ -22,8 +22,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".heartpage"
-            />
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".Friend_list" />
+        <activity android:name=".MiniGame" />
+        <activity android:name=".MyPage" />
+        <activity android:name=".giftBox" />
     </application>
 
 </manifest>

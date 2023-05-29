@@ -17,20 +17,15 @@ public class MainActivity extends AppCompatActivity {
 
     //메인화면에서 버튼 클릭시 다른 화면들 넘어가는 이벤트 구현하기
 
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-
-
         ImageButton gift_box = (ImageButton) findViewById(R.id.box_img);
-        Button friendlist_box = (Button) findViewById(R.id.friendlist_btn);
-        Button mypage_box = (Button) findViewById(R.id.mypage_btn);
+        Button ranking_box = (Button) findViewById(R.id.friendlist_btn);
+        Button heart_box = (Button) findViewById(R.id.mypage_btn);
         Button bg_box = (Button) findViewById(R.id.bg_btn);
         Button mg_box = (Button) findViewById(R.id.mg_bt);
-
-
 
 
         //선물 박스 클릭 시 페이지 이동 이벤트
@@ -38,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //선물박스 관련 자바클래스 만들고 수정하기
-                Intent intent = new Intent(getApplicationContext(), Friend_list.class);
+                Intent intent = new Intent(getApplicationContext(), giftBox.class);
                 startActivity(intent);
             }
         });
@@ -48,13 +43,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //미니게임 관련 자바클래스 만들고 수정하기
-                Intent intent = new Intent(getApplicationContext(), Friend_list.class);
+                Intent intent = new Intent(getApplicationContext(), MiniGame.class);
                 startActivity(intent);
             }
         });
 
-        // 친구목록 클릭 시 페이지 이동 이벤트
-        friendlist_box.setOnClickListener(new View.OnClickListener() {
+        // 친구 목록 페이지 이동 이벤트
+        ranking_box.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //랭킹 관련 자바클래스 만들고 수정하기
@@ -63,12 +58,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-        // 마이페이지 클릭 시 페이지 이동 이벤트
-        mypage_box.setOnClickListener(new View.OnClickListener() {
+        // 마이페이지 페이지 이동 이벤트
+        heart_box.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), heartpage.class);
+                Intent intent = new Intent(getApplicationContext(), MyPage.class);
                 startActivity(intent);
             }
         });

@@ -1,4 +1,13 @@
 package com.example.myapplication;
 
-public class giftBox {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class giftBox extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.personalized_gift_selelct);
+    }
 }
