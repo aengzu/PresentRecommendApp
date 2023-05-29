@@ -7,21 +7,23 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class giftBox extends AppCompatActivity {
+public class gift_friend_n extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.personalized_gift_selelct);
+        setContentView(R.layout.personalized_gift_not_friendlist);
 
-        Button friend_y = (Button) findViewById(R.id.friendlist_y);
-        Button friend_n = (Button) findViewById(R.id.self);
+        Button self = (Button) findViewById(R.id.self);
+        Button make_g = (Button) findViewById(R.id.make_g);
 
-        friend_n.setOnClickListener(new View.OnClickListener() {
+        make_g.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), gift_friend_n.class);
                 startActivity(intent);
             }
         });
+
     }
 }
+
