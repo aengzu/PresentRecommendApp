@@ -68,7 +68,7 @@
             android:textSize="25sp" />
 
         <Button
-            android:id="@+id/friendlist_n"
+            android:id="@+id/self"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="@drawable/fln"

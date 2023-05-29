@@ -53,7 +53,7 @@
         app:srcCompat="@drawable/line" />
 
     <Button
-        android:id="@+id/friendlist_n"
+        android:id="@+id/self"
         android:layout_width="360dp"
         android:layout_height="130dp"
         android:background="@drawable/go_but2"
@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="0.42" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/make_g"
         android:layout_width="380dp"
         android:layout_height="130dp"
         android:background="@drawable/go_but2_1"
