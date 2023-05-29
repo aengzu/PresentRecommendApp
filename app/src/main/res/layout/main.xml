@@ -122,7 +122,7 @@
                     android:fontFamily="@font/nanumsquareroundb"
                     android:padding="10dip"
                     android:paddingLeft="20dp"
-                    android:text="미니 게임\n하러 가기"
+                    android:text="미니 게임으로\n선물 고르기"
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </TableRow>
@@ -132,34 +132,34 @@
                 android:layout_weight="1">
 
                 <Button
-                    android:id="@+id/heart_btn"
+                    android:id="@+id/friendlist_btn"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dip"
 
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:drawableBottom="@drawable/big_ht"
+                    android:drawableBottom="@drawable/friendlist_icon"
                     android:fontFamily="@font/nanumsquareroundb"
                     android:padding="10dip"
                     android:paddingLeft="20dp"
-                    android:text="찜한 상품\n보기"
+                    android:text="친구 목록"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <Button
-                    android:id="@+id/ranking_btn"
+                    android:id="@+id/mypage_btn"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dip"
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:drawableBottom="@drawable/ranking"
+                    android:drawableBottom="@drawable/mypage"
 
                     android:fontFamily="@font/nanumsquareroundb"
                     android:padding="10dip"
                     android:paddingLeft="20dp"
-                    android:text="선물 랭킹\n보러 가기"
+                    android:text="마이페이지"
                     tools:ignore="SpeakableTextPresentCheck" />
             </TableRow>
 
