@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import com.example.myapplication.R;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+
         ImageButton gift_box = (ImageButton) findViewById(R.id.box_img);
         Button ranking_box = (Button) findViewById(R.id.friendlist_btn);
         Button heart_box = (Button) findViewById(R.id.mypage_btn);
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         // 미니게임 클릭 시 페이지 이동 이벤트
         mg_box.setOnClickListener(new View.OnClickListener() {
