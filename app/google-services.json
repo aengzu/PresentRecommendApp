@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "234665130297",
+    "firebase_url": "https://ptto-def62-default-rtdb.firebaseio.com",
+    "project_id": "ptto-def62",
+    "storage_bucket": "ptto-def62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234665130297:android:45945db3571f14298210e8",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSkCxs5MtFwFywC4d_-pZpbdNDvEQReB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234665130297:android:34f70e466b3eaab88210e8",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSkCxs5MtFwFywC4d_-pZpbdNDvEQReB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
