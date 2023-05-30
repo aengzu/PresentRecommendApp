@@ -22,7 +22,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".signUpActivity"/>
+        <activity android:name=".signUpActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".BaseActivity" />
         <activity android:name=".Friend_list" />

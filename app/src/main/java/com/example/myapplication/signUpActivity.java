@@ -4,15 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -20,80 +17,54 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 
 public class signUpActivity extends AppCompatActivity {
-    private static final String TAG = "SignUpActivity";
-    private FirebaseAuth mAuth; //firebase 인증처리
-    private DatabaseReference mDatabaseRef; // firebase 실시간 데이타베이스
-    private EditText mEtEmail, mEtPwd, mEtName, mEtMBTI, mEtAge, mEtPwdCT; //회원가입 입력필드
+    private FirebaseAuth firebaseAuth;
+    private EditText editTextEmail;
+    private EditText editTextPassword;
+    private EditText editTextName;
+    private Button buttonJoin;
 
-    private RadioGroup gender; //성별 radiobutton
-    private Button sign_up; //회원가입 버튼
-
-
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup);
 
-        mAuth = FirebaseAuth.getInstance();
-        mDatabaseRef = FirebaseDatabase.getInstance().getReference("example");
+        firebaseAuth = FirebaseAuth.getInstance();
 
-        mEtEmail = findViewById(R.id.edittext_email);
-        mEtPwd = findViewById(R.id.edittext_password);
-        mEtMBTI = findViewById(R.id.MBTI);
-        mEtName = findViewById(R.id.name);
-        mEtAge = findViewById(R.id.age);
+        editTextEmail = (EditText) findViewById(R.id.edittext_email);
+        editTextPassword = (EditText) findViewById(R.id.user_pwd);
+        editTextName = (EditText) findViewById(R.id.name);
 
-        sign_up = findViewById(R.id.signUpButton);
-        sign_up.setOnClickListener(new View.OnClickListener() {
+        buttonJoin = (Button) findViewById(R.id.signUpButton);
+        buttonJoin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //회원가입 처리 시작
-                String strEmail = mEtEmail.getText().toString();
-                //비밀번호 확인 과 동일한지 확인하는 작업 아직 구현 x
-                String strPwd = mEtPwd.getText().toString();
-                String strPwdCt = mEtPwdCT.getText().toString();
-
-                String strName = mEtName.getText().toString();
-                int intage = Integer.parseInt(mEtAge.getText().toString());
-                String strMBTI = mEtMBTI.getText().toString();
-
-                if (strPwd == strPwdCt) {
-                    mAuth.createUserWithEmailAndPassword(strEmail, strPwd).addOnCompleteListener(signUpActivity.this,
-                            new OnCompleteListener<AuthResult>() {
-                                @Override
-                                public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (task.isSuccessful()) {
-                                        FirebaseUser firebaseUser = mAuth.getCurrentUser();
-                                        UserAccount account = new UserAccount();
-                                        account.setIdToken(firebaseUser.getUid());
-                                        account.setEmailId(firebaseUser.getEmail());
-                                        account.setPassword(strPwd);
-
-                                        mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
-
-                                        Toast.makeText(signUpActivity.this, "회원가입이 완료되었습니다!", Toast.LENGTH_SHORT).show();
-                                    } else {
-                                        Toast.makeText(signUpActivity.this, "회원가입에 실패하셨습니다.", Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
+                if (!editTextEmail.getText().toString().equals("") && !editTextPassword.getText().toString().equals("")) {
+                    // 이메일과 비밀번호가 공백이 아닌 경우
+                    createUser(editTextEmail.getText().toString(), editTextPassword.getText().toString(), editTextName.getText().toString());
                 } else {
-                    Toast myToast = Toast.makeText(signUpActivity.this,
-                            "비밀번호와 비밀번호 확인 password 가 다릅니다 !", Toast.LENGTH_SHORT);
-                    myToast.show();
+                    // 이메일과 비밀번호가 공백인 경우
+                    Toast.makeText(signUpActivity.this, "계정과 비밀번호를 입력하세요.", Toast.LENGTH_LONG).show();
                 }
-
-
             }
-
         });
     }
+
+    private void createUser(String email, String password, String name) {
+        firebaseAuth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // 회원가입 성공시
+                            Toast.makeText(signUpActivity.this, "회원가입 성공", Toast.LENGTH_SHORT).show();
+                            finish();
+                        } else {
+                            // 계정이 중복된 경우
+                            Toast.makeText(signUpActivity.this, "이미 존재하는 계정입니다.", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+    }
 }
-
-

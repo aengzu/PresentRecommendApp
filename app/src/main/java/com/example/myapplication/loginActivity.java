@@ -1,5 +1,4 @@
 package com.example.myapplication;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import androidx.annotation.NonNull;
@@ -24,12 +23,10 @@ public class loginActivity extends AppCompatActivity {
     private Button buttonLogIn;
     private Button buttonSignUp;
 
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-
         firebaseAuth = FirebaseAuth.getInstance();
 
         editTextEmail = (EditText) findViewById(R.id.edittext_email);
@@ -39,7 +36,7 @@ public class loginActivity extends AppCompatActivity {
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 회원가입 화면으로 이동
+                // SignUpActivity 연결
                 Intent intent = new Intent(loginActivity.this, signUpActivity.class);
                 startActivity(intent);
             }
@@ -63,8 +60,6 @@ public class loginActivity extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     Intent intent = new Intent(loginActivity.this, MainActivity.class);
-                    //원래는 HomeActivity로 이동하는건데 MainActivity가 안돌아가서,,임시로 signUpActivity 해놓음
-                    //로그인 성공하면 홈으로 이동하는데 어디가 문제인지 추후 수정필요
                     startActivity(intent);
                     finish();
                 } else {

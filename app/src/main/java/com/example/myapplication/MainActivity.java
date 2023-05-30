@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+
         ImageButton gift_box = (ImageButton) findViewById(R.id.box_img);
         Button friend_box = (Button) findViewById(R.id.friendlist_btn);
         Button mypage_box = (Button) findViewById(R.id.mypage_btn);
