@@ -12,6 +12,5 @@ public class gift_friend_y extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.personalized_gift_selelct);
-
     }
 }
