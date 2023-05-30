@@ -39,7 +39,7 @@ public class loginActivity extends AppCompatActivity {
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // SignUpActivity 연결
+                // 회원가입 화면으로 이동
                 Intent intent = new Intent(loginActivity.this, signUpActivity.class);
                 startActivity(intent);
             }
@@ -62,7 +62,7 @@ public class loginActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
-                    Intent intent = new Intent(loginActivity.this, signUpActivity.class);
+                    Intent intent = new Intent(loginActivity.this, MainActivity.class);
                     //원래는 HomeActivity로 이동하는건데 MainActivity가 안돌아가서,,임시로 signUpActivity 해놓음
                     //로그인 성공하면 홈으로 이동하는데 어디가 문제인지 추후 수정필요
                     startActivity(intent);
