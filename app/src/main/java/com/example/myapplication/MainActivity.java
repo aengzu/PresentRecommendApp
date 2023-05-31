@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 //선물박스 관련 자바클래스 만들고 수정하기
                 Intent intent = new Intent(getApplicationContext(), giftBox.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 //미니게임 관련 자바클래스 만들고 수정하기
                 Intent intent = new Intent(getApplicationContext(), MiniGame.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 //밸런스게임 관련 자바클래스 만들고 수정하기
                 Intent intent = new Intent(getApplicationContext(), BalanceGame.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -66,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 //친구 목록 자바클래스 만들고 수정하기
                 Intent intent = new Intent(getApplicationContext(), friendlist.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -75,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), MyPage.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

@@ -3,10 +3,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,7 +14,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class signUpActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
@@ -59,6 +56,9 @@ public class signUpActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // 회원가입 성공시
                             Toast.makeText(signUpActivity.this, "회원가입 성공", Toast.LENGTH_SHORT).show();
+                            //가입 성공 시 가입 시 설문- 내 취향으로 이동
+                            Intent intent = new Intent(signUpActivity.this, SignSurveyMytast.class);
+                            startActivity(intent);
                             finish();
                         } else {
                             // 계정이 중복된 경우
