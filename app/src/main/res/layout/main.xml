@@ -106,7 +106,7 @@
                     android:fontFamily="@font/nanumsquareroundb"
                     android:padding="10dip"
                     android:paddingLeft="20dp"
-                    android:text="상대 취향 알아내기"
+                    android:text="밸런스 게임으로\n상대 취향 알아내기"
                     android:textSize="14sp"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -123,7 +123,7 @@
                     android:fontFamily="@font/nanumsquareroundb"
                     android:padding="10dip"
                     android:paddingLeft="20dp"
-                    android:text="선물 랭킹 보러가기"
+                    android:text="미니 게임으로\n선물 고르기"
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </TableRow>
