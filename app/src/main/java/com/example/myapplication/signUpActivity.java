@@ -14,13 +14,21 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class signUpActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
+    private DatabaseReference mRootRef = FirebaseDatabase.getInstance().getReference();
+
+
     private EditText editTextEmail;
     private EditText editTextPassword;
+    private EditText editTextAge;
+    private EditText editTextMBTI;
     private EditText editTextName;
     private Button buttonJoin;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +40,9 @@ public class signUpActivity extends AppCompatActivity {
         editTextEmail = (EditText) findViewById(R.id.edittext_email);
         editTextPassword = (EditText) findViewById(R.id.user_pwd);
         editTextName = (EditText) findViewById(R.id.name);
+        editTextAge = (EditText) findViewById(R.id.age);
+        editTextMBTI = (EditText) findViewById(R.id.MBTI);
+
 
         buttonJoin = (Button) findViewById(R.id.signUpButton);
         buttonJoin.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +50,10 @@ public class signUpActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (!editTextEmail.getText().toString().equals("") && !editTextPassword.getText().toString().equals("")) {
                     // 이메일과 비밀번호가 공백이 아닌 경우
-                    createUser(editTextEmail.getText().toString(), editTextPassword.getText().toString(), editTextName.getText().toString());
+
+                    createUser(editTextEmail.getText().toString(), editTextPassword.getText().toString());
+
+
                 } else {
                     // 이메일과 비밀번호가 공백인 경우
                     Toast.makeText(signUpActivity.this, "계정과 비밀번호를 입력하세요.", Toast.LENGTH_LONG).show();
@@ -48,7 +62,7 @@ public class signUpActivity extends AppCompatActivity {
         });
     }
 
-    private void createUser(String email, String password, String name) {
+    private void createUser(String email, String password) {
         firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
