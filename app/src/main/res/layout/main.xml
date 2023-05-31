@@ -123,7 +123,7 @@
                     android:fontFamily="@font/nanumsquareroundb"
                     android:padding="10dip"
                     android:paddingLeft="20dp"
-                    android:text="미니 게임으로\n선물 고르기"
+                    android:text="이상형 월드컵\n하러 가기"
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </TableRow>
