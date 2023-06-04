@@ -1,6 +1,12 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Adapter;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -19,6 +25,14 @@ public class Friend_list extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.friend_list);
+        ImageView backButton = (ImageView) findViewById(R.id.backButton);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Friend_list.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
 
@@ -41,4 +55,5 @@ public class Friend_list extends AppCompatActivity {
         }
         mRecyclerAdapter.setFriendList(mfriendItems);
     }
+
 }
