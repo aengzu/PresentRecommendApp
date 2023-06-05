@@ -10,28 +10,66 @@ import androidx.appcompat.app.AppCompatActivity;
 public class UserAccount extends AppCompatActivity {
 
 
-    private String emailId; //  이메일 아이디
-    private String IdToken; // Firebase Uid(고유 토큰 정보)
-    private String password;
-    private String name;
-    private String MBTI;
-    private int age;
+    String email;
+    String name;
+    String gender;
+    String MBTI;
 
-    public UserAccount() {}
+    public String getEmail() {
+        return email;
+    }
 
-    public String getIdToken() { return IdToken;}
-    public void setIdToken(String idToken) { this.IdToken = idToken;}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-    public String getEmailId(){
-        return emailId;
+    public String getName() {
+        return name;
     }
-    public void setEmailId(String EmailId){
-        this.emailId = EmailId;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public String getPassword(){
-        return password;
+
+    public String getGender() {
+        return gender;
     }
-    public void setPassword(String password){
-        this.password = password;
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
+
+    public String getMBTI() {
+        return MBTI;
+    }
+
+    public void setMBTI(String MBTI) {
+        this.MBTI = MBTI;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    String age;
+
+
+
+    public UserAccount(String email, String name, String age, String gender, String MBTI) {
+        this.email = email;
+        this.name = name;
+        this.age  = age;
+        this.gender = gender;
+        this.MBTI = MBTI;
+    }
+    public UserAccount() {
+
+    }
+
+
+
 }

@@ -237,6 +237,7 @@
         android:orientation="horizontal">
 
         <RadioGroup
+            android:id="@+id/gendergroup"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
 

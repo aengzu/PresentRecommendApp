@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
@@ -22,8 +23,8 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".signUpActivity" />
-        <activity android:name=".SignSurveyMytast" />
+        <activity android:name=".signUpActivity"  android:exported="true"/>
+        <activity android:name=".SignSurveyMytast" android:exported="true"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".BaseActivity" />
         <activity android:name=".Friend_list" />
