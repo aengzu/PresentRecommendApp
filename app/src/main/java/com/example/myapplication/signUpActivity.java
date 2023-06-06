@@ -122,10 +122,10 @@ public class signUpActivity extends AppCompatActivity {
                             UserAccount usr = new UserAccount(email, name, age, sex, MBTI);
 
 
-                            reference.child(name).child("email").setValue(email);
-                            reference.child(name).child("age").setValue(age);
-                            reference.child(name).child("MBTI").setValue(MBTI);
-                            reference.child(name).child("sex").setValue(sex);
+                            reference.child(email).child("name").setValue(name);
+                            reference.child(email).child("age").setValue(age);
+                            reference.child(email).child("MBTI").setValue(MBTI);
+                            reference.child(email).child("sex").setValue(sex);
 
                             Intent intent = new Intent(signUpActivity.this, SignSurveyMytast.class);
                             startActivity(intent);

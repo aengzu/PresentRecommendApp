@@ -7,8 +7,11 @@ import androidx.appcompat.app.AppCompatActivity;
 /** 사용자 계정 정보 모델 클래스
  * */
 
-public class UserAccount extends AppCompatActivity {
+public class UserAccount {
 
+    public UserAccount() {
+
+    }
 
     String email;
     String name;
@@ -65,9 +68,6 @@ public class UserAccount extends AppCompatActivity {
         this.age  = age;
         this.gender = gender;
         this.MBTI = MBTI;
-    }
-    public UserAccount() {
-
     }
 
 
