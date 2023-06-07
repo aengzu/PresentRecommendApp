@@ -12,11 +12,19 @@ public class UserAccount {
     public UserAccount() {
 
     }
-
+    String uid;
     String email;
     String name;
     String gender;
     String MBTI;
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
 
     public String getEmail() {
         return email;

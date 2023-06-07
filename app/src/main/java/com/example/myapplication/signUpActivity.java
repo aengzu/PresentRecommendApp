@@ -31,6 +31,7 @@ public class signUpActivity extends AppCompatActivity {
     DatabaseReference reference;
 
 
+
     private EditText editTextEmail;
     private EditText editTextPassword;
     private EditText editTextAge;
@@ -120,12 +121,14 @@ public class signUpActivity extends AppCompatActivity {
                             //가입 성공 시 가입 시 설문- 내 취향으로 이동
 
                             UserAccount usr = new UserAccount(email, name, age, sex, MBTI);
+                            String user  = firebaseAuth.getCurrentUser().getUid();
 
-
-                            reference.child(email).child("name").setValue(name);
-                            reference.child(email).child("age").setValue(age);
-                            reference.child(email).child("MBTI").setValue(MBTI);
-                            reference.child(email).child("sex").setValue(sex);
+                            //이메일을 키값으로 쓰면 특수문자 관련 에러발생해서 name 을 키값으로 사용,
+                            reference.child("users").child(user).child("name").setValue(name);
+                            reference.child("users").child(user).child("age").setValue(age);
+                            reference.child("users").child(user).child("MBTI").setValue(MBTI);
+                            reference.child("users").child(user).child("sex").setValue(sex);
+                            reference.child("users").child(user).child("email").setValue(email);
 
                             Intent intent = new Intent(signUpActivity.this, SignSurveyMytast.class);
                             startActivity(intent);

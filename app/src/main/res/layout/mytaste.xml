@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_gravity="right">
 
     <!-- 상단바 -->
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="410dp"
         android:layout_height="wrap_content"
         android:elevation="4dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         app:contentInsetStartWithNavigation="0dp"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001">
 
         <ImageView
             android:id="@+id/backButton"
@@ -29,6 +36,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:text="취향 설정"
+            android:fontFamily="@font/nanumsquareroundb"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -39,24 +47,65 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
         <ImageView
-            android:id="@+id/imageView12"
+            android:id="@+id/imageView15"
             android:layout_width="match_parent"
-            android:layout_marginTop="60dp"
-            android:layout_height="90dp"
-            android:background="@drawable/user_list" />
+            android:layout_height="3dp"
+            android:background="#AAA9A9"
+            app:srcCompat="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@drawable/my_icon" />
+
+            <TextView
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="200dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:text="User 이름" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right|center_vertical|end"
+                android:background="@drawable/icon_right"
+                android:gravity="end"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#AAA9A9"
+            app:srcCompat="@drawable/line" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:orientation="horizontal">
+
+
 
             <TextView
                 android:id="@+id/textView9"
@@ -69,76 +118,88 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/age_textview"
                 android:layout_width="match_parent"
-                android:text="테스트"
-                android:gravity="center_vertical"
                 android:layout_height="match_parent"
-                android:layout_marginRight="50dp"
                 android:layout_marginLeft="50dp"
-            />
+                android:layout_marginRight="50dp"
+
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:text="테스트" />
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/imageView19"
             android:layout_width="match_parent"
             android:layout_height="3dp"
             android:background="#AAA9A9"
             app:srcCompat="@drawable/line" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginLeft="15dp"
-            android:fontFamily="@font/nanumsquareroundr"
-            android:gravity="center_vertical"
-            android:text="성별"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/sex_text"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:text="테스트"
-            android:gravity="center_vertical"
-            android:layout_height="match_parent"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="50dp"
-            />
-    </LinearLayout>
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/nanumsquareroundr"
+                android:gravity="center_vertical"
+                android:text="성별"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sex_textview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+
+                android:textSize="20sp"
+                android:text="테스트" />
+        </LinearLayout>
+
         <ImageView
             android:id="@+id/imageView16"
             android:layout_width="match_parent"
             android:layout_height="3dp"
             android:background="#AAA9A9"
             app:srcCompat="@drawable/line" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="54dp"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginLeft="15dp"
-            android:fontFamily="@font/nanumsquareroundb"
-            android:gravity="center_vertical"
-            android:text="MBTI"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/mbti_text"
-            android:layout_width="match_parent"
-            android:text="테스트"
-            android:gravity="center_vertical"
-            android:layout_height="match_parent"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="40dp"
-            />
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:gravity="center_vertical"
+                android:text="MBTI"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/mbti_textview"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:textSize="20sp"
+                android:text="테스트" />
+
+        </LinearLayout>
 
         <ImageView
             android:id="@+id/imageView17"
@@ -147,15 +208,30 @@
             android:background="#AAA9A9"
             app:srcCompat="@drawable/line" />
 
-        <TextView
-            android:id="@+id/textView16"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="15dp"
-            android:fontFamily="@font/nanumsquareroundb"
-            android:gravity="center_vertical"
-            android:text="홍길동 님의 취향"
-            android:textSize="20sp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:text="user name" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/nanumsquareroundb"
+                android:gravity="center_vertical"
+                android:text=" 님의 취향"
+                android:textSize="20sp" />
+        </LinearLayout>
 
         <TableLayout
             android:layout_width="wrap_content"
