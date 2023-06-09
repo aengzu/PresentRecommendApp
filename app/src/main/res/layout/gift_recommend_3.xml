@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 상단바 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="뒤로 가기"
+            android:src="@drawable/go_back_btn" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquareroundeb"
+        android:lineSpacingExtra="8sp"
+        android:text="내가 알고있는 상대의 느낌, \n성향을 모두 골라주세요."
+        android:textAlignment="center"
+        android:textColor="#090909"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nextbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="컬러풀한"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="315dp"
+                tools:layout_editor_absoluteY="138dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="활발한"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="169dp"
+                tools:layout_editor_absoluteY="37dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="간식좋아"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteY="367dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="직장인"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="99dp"
+                tools:layout_editor_absoluteY="340dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="학생"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="99dp"
+                tools:layout_editor_absoluteY="241dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton17"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="파란색"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="-40dp"
+                tools:layout_editor_absoluteY="267dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton19"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="빨간색"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="192dp"
+                tools:layout_editor_absoluteY="367dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton18"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="무채색"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="417dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton21"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="반려동물"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="473dp"
+                tools:layout_editor_absoluteY="241dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="감성적"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="99dp"
+                tools:layout_editor_absoluteY="129dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton7"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_inactive"
+                android:text="힙한"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="417dp"
+                tools:layout_editor_absoluteY="28dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton8"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="깔끔한"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="376dp"
+                tools:layout_editor_absoluteY="241dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton9"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="패셔너블"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="4dp"
+                tools:layout_editor_absoluteY="37dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton10"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_inactive"
+                android:text="귀여운"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="447dp"
+                tools:layout_editor_absoluteY="367dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton20"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_inactive"
+                android:text="자취"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="337dp"
+                tools:layout_editor_absoluteY="347dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton12"
+
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_inactive"
+                android:clickable="true"
+                android:text="실용적"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="306dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton11"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="예쁜 쓰레기 환영"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="226dp"
+                tools:layout_editor_absoluteY="260dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton14"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:text="운전"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="208dp"
+                tools:layout_editor_absoluteY="148dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton13"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/circle_button"
+                android:clickable="true"
+                android:text="노란색"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteY="161dp">
+
+            </androidx.appcompat.widget.AppCompatButton>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:text="선물 추천 받기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="마지막으로"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
