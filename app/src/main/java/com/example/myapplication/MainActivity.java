@@ -3,6 +3,7 @@ package com.example.myapplication;
 import com.example.myapplication.R;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -45,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         mg_box.setOnClickListener(new View.OnClickListener() { // 미니게임박스
             @Override
             public void onClick(View v) {
-                //미니게임 관련 자바클래스 만들고 수정하기
-                Intent intent = new Intent(getApplicationContext(), MiniGame.class);
+                //선물 이상ㅎ여 월드컵 관련 자바클래스 만들고 수정하기
+                Intent intent = new Intent(getApplicationContext(), BalanceGame.class);
                 startActivity(intent);
                 finish();
             }
@@ -56,9 +57,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //밸런스게임 관련 자바클래스 만들고 수정하기
-                Intent intent = new Intent(getApplicationContext(), BalanceGame.class);
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.pttoapp.com/"));
                 startActivity(intent);
+
                 finish();
+
             }
         });
 

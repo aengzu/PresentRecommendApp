@@ -13,8 +13,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="320dp"
-        android:layout_height="630dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
 
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,9 +37,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nanumsquareroundeb"
                 android:gravity="center"
-                android:paddingBottom="5dp"
+                android:paddingBottom="3dp"
                 android:text="두근두근 !"
-                android:textColor="#FB564A"
+                android:textColor="#99F53308"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -49,7 +51,7 @@
                 android:fontFamily="@font/nanumsquareroundb"
                 android:gravity="center"
                 android:text="선물 추천"
-                android:textSize="35sp"
+                android:textSize="33sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -60,50 +62,53 @@
 
             <ImageButton
                 android:id="@+id/box_img"
-                android:layout_width="220dp"
-                android:layout_height="220dp"
+                android:layout_width="240dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:background="#1ADADADA"
-                android:drawablePadding="20dp"
+                android:drawablePadding="10dp"
                 android:paddingTop="10dp"
-                android:scaleType="centerInside"
-                app:srcCompat="@drawable/giftbox"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/pink_coral_present"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/nanumsquareroundr"
+                android:fontFamily="@font/nanumsquareroundb"
                 android:gravity="center_horizontal"
-                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
                 android:text="선물 박스 누르고 선물 추천 받으러 가기~"
-                android:textColor="#FB564A"
+                android:paddingTop="10dp"
+                android:textColor="#99F53308"
                 android:textColorLink="#663FB8"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
-        <TableLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            android:stretchColumns="1">
-
-            <TableRow
-                android:layout_width="355dp"
-                android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/bg_btn"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="6dip"
 
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:drawableBottom="@drawable/vs3"
+                    android:drawableBottom="@drawable/taste_icon"
                     android:fontFamily="@font/nanumsquareroundb"
+                    android:lineSpacingExtra="5sp"
                     android:padding="10dip"
                     android:paddingLeft="20dp"
                     android:text="밸런스 게임으로\n상대 취향 알아내기"
@@ -113,59 +118,61 @@
                 <Button
                     android:id="@+id/mg_bt"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_margin="6dip"
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:drawableBottom="@drawable/rou5"
+                    android:drawableBottom="@drawable/ranking"
 
                     android:fontFamily="@font/nanumsquareroundb"
-                    android:padding="10dip"
+                    android:lineSpacingExtra="5sp"
+                    android:padding="10dp"
                     android:paddingLeft="20dp"
-                    android:text="미니 게임으로\n선물 고르기"
+                    android:text="선물 월드컵으로\n상대 취향 알아내기"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-            </TableRow>
+            </LinearLayout>
 
-            <TableRow
-                android:layout_width="359dp"
-                android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/friendlist_btn"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="6dip"
-
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="6dp"
                     android:layout_weight="1"
+
                     android:background="@drawable/main_box"
-                    android:drawableBottom="@drawable/friendlist_icon"
+                    android:drawableBottom="@drawable/main_friends"
                     android:fontFamily="@font/nanumsquareroundb"
-                    android:padding="10dip"
+                    android:padding="10dp"
                     android:paddingLeft="20dp"
                     android:text="친구 목록"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <Button
                     android:id="@+id/mypage_btn"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="6dip"
-                    android:layout_marginLeft="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="6dp"
                     android:layout_weight="1"
                     android:background="@drawable/main_box"
-                    android:drawableBottom="@drawable/mypage"
-
+                    android:drawableBottom="@drawable/main_mypage"
                     android:fontFamily="@font/nanumsquareroundb"
-                    android:padding="10dip"
+                    android:padding="10dp"
                     android:paddingLeft="20dp"
                     android:text="마이페이지"
+
                     tools:ignore="SpeakableTextPresentCheck" />
-            </TableRow>
 
-        </TableLayout>
-
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

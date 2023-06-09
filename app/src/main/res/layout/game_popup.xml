@@ -3,7 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:background="#00FFFFFF"
+    android:background="#008A8A8A"
     android:orientation="vertical">
 
     <Button
@@ -23,12 +23,13 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/nanumsquareroundb"
         android:gravity="center"
+        android:lineSpacingExtra="8sp"
         android:padding="20dp"
-        android:text="상대의 취향을 알 수 있는\n밸런스 게임이 생성되었습니다 !"
+        android:text="상대의 취향을 알 수 있는\n이상형 월드컵 링크가 생성되었습니다 !"
         android:textColor="#000000" />
 
-    <EditText
-        android:id="@+id/editTextText"
+    <TextView
+        android:id="@+id/link_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#F3AC9C"
@@ -36,7 +37,7 @@
         android:gravity="center"
         android:inputType="text"
         android:singleLine="false"
-        android:text="https://hwaiiteam.com/"
+        android:text="https://sprightly-platypus-6eae66.netlify.app"
         android:textSize="13sp" />
 
     <Button
@@ -52,18 +53,6 @@
         android:text="링크 복사"
         android:textSize="10dp" />
 
-    <Button
-        android:id="@+id/kakao_btn"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginRight="3dp"
-        android:layout_marginBottom="7dp"
-        android:background="#FBE362"
-        android:fontFamily="@font/nanumsquareroundb"
-        android:text="카톡으로 비밀 밸런스게임 전송하기"
-        android:textColor="#803838"
-        android:textSize="10sp" />
+
 
 </LinearLayout>
