@@ -37,6 +37,7 @@
         <activity android:name=".BalanceGame" />
         <activity android:name=".friendlist" />
         <activity android:name=".friend_page"/>
+        <activity android:name=".gift_friend_y"/>
         <activity android:name=".RecommendationActivity"/>
     </application>
 

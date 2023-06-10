@@ -20,6 +20,7 @@ public class gift_friend_y extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(gift_friend_y.this, giftBox.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -29,6 +30,7 @@ public class gift_friend_y extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(gift_friend_y.this, RecommendationActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
