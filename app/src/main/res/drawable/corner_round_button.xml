@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="102dp"
+    android:height="40dp"
+    android:viewportWidth="102"
+    android:viewportHeight="81">
+    <item android:state_selected="true"
+        android:drawable="@drawable/gender_button_activated"/>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M0.75 40c0-22.09 17.91-40 40-40h20.75c22.09 0 40 17.91 40 40v1c0 22.09-17.91 40-40 40h-20.75c-22.09 0-40-17.91-40-40z"/>
+    <path
+        android:strokeColor="#33F53308"
+        android:strokeWidth="3"
+        android:pathData="M2.25 40c0-21.26 17.24-38.5 38.5-38.5h20.75c21.26 0 38.5 17.24 38.5 38.5v1c0 21.26-17.24 38.5-38.5 38.5h-20.75c-21.26 0-38.5-17.24-38.5-38.5z"/>
+</vector>

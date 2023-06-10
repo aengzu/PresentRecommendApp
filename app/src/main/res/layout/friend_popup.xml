@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="친구 목록"
+        android:text="선물하고 싶은 친구를 선택해주세요."
         android:textSize="20sp"
         android:textColor="#000"
         android:textStyle="bold"/>

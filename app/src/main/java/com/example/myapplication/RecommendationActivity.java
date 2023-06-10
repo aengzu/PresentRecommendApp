@@ -1,5 +1,6 @@
 package com.example.myapplication;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -24,6 +25,12 @@ public class RecommendationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recomendation);
+
+        Intent lastIntent = getIntent();
+        String MBTI = lastIntent.getStringExtra("MBTI");
+        String age = lastIntent.getStringExtra("age");
+        String sex = lastIntent.getStringExtra("sex");
+
 
         // Firebase Firestore 인스턴스 초기화
         db = FirebaseFirestore.getInstance();

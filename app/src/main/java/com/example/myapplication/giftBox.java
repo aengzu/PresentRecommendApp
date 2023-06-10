@@ -24,6 +24,16 @@ public class giftBox extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+       //친구 목록에 있어요 클릭시
+        friend_y.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), gift_friend_y.class);
+                startActivity(intent);
+            }
+        });
+
+        //친구목록에 없어요 클릭시
         friend_n.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

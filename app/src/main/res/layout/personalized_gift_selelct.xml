@@ -18,20 +18,21 @@
             android:id="@+id/backButton"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/go_back_btn"
-            android:contentDescription="뒤로 가기" />
+            android:contentDescription="뒤로 가기"
+            android:src="@drawable/go_back_btn" />
 
         <TextView
             android:id="@+id/toolbarTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:text="누구한테 줄꺼야?"
             android:textColor="@android:color/black"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_gravity="center" />
+            android:textStyle="bold" />
 
     </androidx.appcompat.widget.Toolbar>
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -62,34 +63,40 @@
             android:id="@+id/friendlist_y"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@drawable/fly"
-            android:fontFamily="@font/nanumsquareroundeb"
-            android:text="   친구 목록에서 고르기"
+            android:background="@drawable/go_button"
+            android:drawableLeft="@drawable/fly_icon"
+            android:paddingLeft="30dp"
+            android:fontFamily="@font/nanumsquareroundb"
+            android:text="    친구 목록에서 고르기"
+            android:gravity="center|left"
             android:textSize="25sp" />
 
         <Button
             android:id="@+id/self"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@drawable/fln"
-            android:fontFamily="@font/nanumsquareroundeb"
-            android:text="친구 목록에 없어요"
+            android:background="@drawable/go_button"
+            android:fontFamily="@font/nanumsquareroundb"
+
+            android:drawableLeft="@drawable/fln_icon"
+            android:paddingLeft="30dp"
+            android:gravity="center|left"
+            android:text="    친구 목록에 없어요"
             android:textSize="25sp" />
 
     </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="293dp"
+        android:layout_marginTop="36dp"
         android:alpha="0.4"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/giftbox"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@drawable/present_3"
         tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

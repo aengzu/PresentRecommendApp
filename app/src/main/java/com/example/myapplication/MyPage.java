@@ -31,6 +31,14 @@ public class MyPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mytaste);
         ImageView backButton = (ImageView) findViewById(R.id.backButton);
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MyPage.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
         user.setUid(currentUser.getUid());
         TextView name_text2 = findViewById(R.id.user_name);
         TextView age_text = findViewById(R.id.age_textview);

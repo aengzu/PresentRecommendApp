@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.06999999">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/male"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
@@ -80,7 +80,7 @@
             android:textSize="16sp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/female"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
@@ -92,7 +92,7 @@
             android:textSize="16sp" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/no_choice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/gender_button"
@@ -136,12 +136,10 @@
         app:layout_constraintVertical_bias="0.445" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editTextAge"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:hint="숫자만 입력"
-        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.153"
@@ -160,7 +158,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.189"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber"
+        app:layout_constraintStart_toEndOf="@+id/editTextAge"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.566" />
 
@@ -174,7 +172,7 @@
     </androidx.cardview.widget.CardView>
 
     <EditText
-        android:id='@+id/name'
+        android:id='@+id/MBTI'
         android:layout_width="150dp"
         android:layout_height="48dp"
         android:background="#ECECEC"

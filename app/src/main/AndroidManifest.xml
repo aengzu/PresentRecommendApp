@@ -26,6 +26,8 @@
         <activity android:name=".signUpActivity"  android:exported="true"/>
         <activity android:name=".SignSurveyMytast" android:exported="true"/>
         <activity android:name=".MainActivity" />
+        <activity android:name=".SellfSelection"/>
+        <activity android:name=".SelfSelection2"/>
         <activity android:name=".BaseActivity" />
         <activity android:name=".Friend_list" />
         <activity android:name=".MiniGame" />
@@ -34,6 +36,8 @@
         <activity android:name=".gift_friend_n" />
         <activity android:name=".BalanceGame" />
         <activity android:name=".friendlist" />
+        <activity android:name=".friend_page"/>
+        <activity android:name=".RecommendationActivity"/>
     </application>
 
 </manifest>
