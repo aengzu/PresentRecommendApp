@@ -1,33 +1,30 @@
 package com.example.myapplication;
 
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class BaseActivity extends AppCompatActivity {
-    public void setActionBar(Toolbar toolbar) {
-        ActionBar actionBar;
-
-        setSupportActionBar(toolbar);
-        actionBar = getSupportActionBar();
-        actionBar.setDisplayShowCustomEnabled(true);
-        actionBar.setDisplayShowTitleEnabled(false);// 제목 없애줌
-        actionBar.setDisplayHomeAsUpEnabled(true);  // 뒤로가기 버튼
-    }
-
-
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home: { //toolbar의 back키 눌렀을 때 동작
-                finish();
-                return true;
-            }
-        }
-        return super.onOptionsItemSelected(item);
-    }
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.basic_loco);
 
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(BaseActivity.this, loginActivity.class);
+                startActivity(intent);
+            }
+        }, 3000);
+    }
 }

@@ -28,7 +28,7 @@
         android:id="@+id/main_text"
         android:layout_width="355dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/nanumsquareroundeb"
+        android:fontFamily="@font/nanumsquareroundb"
         android:gravity="center"
         android:lineSpacingExtra="15dp"
         android:text="상대의 성별과 나이대를\n알려주세요 !"
@@ -107,7 +107,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/nanumsquareroundeb"
+        android:fontFamily="@font/nanumsquareroundb"
 
         android:text="나이는"
         android:textColor="#000000"
@@ -123,7 +123,7 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/nanumsquareroundeb"
+        android:fontFamily="@font/nanumsquareroundb"
 
         android:text="MBTI 는"
         android:textColor="#000000"
@@ -151,7 +151,7 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/nanumsquareroundeb"
+        android:fontFamily="@font/nanumsquareroundb"
         android:text="살"
         android:textColor="#000000"
         android:textSize="30sp"
@@ -192,12 +192,13 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
+        android:fontFamily="@font/nanumsquareroundb"
         android:text="다음으로"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
 
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.944" />
 

@@ -79,7 +79,7 @@
         android:id="@+id/main_text"
         android:layout_width="355dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/nanumsquareroundeb"
+        android:fontFamily="@font/nanumsquareroundb"
         android:gravity="center"
         android:lineSpacingExtra="15dp"
         android:text="상대와의 관계는 \n어떻게 되나요?"
@@ -111,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:fontFamily="@font/nanumsquareroundeb"
+        android:fontFamily="@font/nanumsquareroundb"
         android:text="선물의 가격대는"
         android:textColor="#000000"
         android:textSize="27sp"
@@ -141,12 +141,13 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
+        android:fontFamily="@font/nanumsquareroundb"
         android:text="다음으로"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
 
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.944" />
 

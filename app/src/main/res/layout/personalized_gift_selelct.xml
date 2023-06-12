@@ -65,10 +65,10 @@
             android:layout_height="100dp"
             android:background="@drawable/go_button"
             android:drawableLeft="@drawable/fly_icon"
-            android:paddingLeft="30dp"
             android:fontFamily="@font/nanumsquareroundb"
-            android:text="    친구 목록에서 고르기"
             android:gravity="center|left"
+            android:paddingLeft="30dp"
+            android:text="    친구 목록에서 고르기"
             android:textSize="25sp" />
 
         <Button

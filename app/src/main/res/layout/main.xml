@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4DDADADA"
+    android:background="#73DADADA"
     android:paddingLeft="20dp"
     android:paddingTop="20dp"
     android:paddingRight="20dp"
@@ -39,7 +39,7 @@
                 android:gravity="center"
                 android:paddingBottom="3dp"
                 android:text="두근두근 !"
-                android:textColor="#99F53308"
+                android:textColor="#BFFF3334"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -78,10 +78,10 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nanumsquareroundb"
                 android:gravity="center_horizontal"
+                android:paddingTop="10dp"
                 android:paddingBottom="5dp"
                 android:text="선물 박스 누르고 선물 추천 받으러 가기~"
-                android:paddingTop="10dp"
-                android:textColor="#99F53308"
+                android:textColor=" #BFFF3334"
                 android:textColorLink="#663FB8"
                 android:textStyle="bold" />
 
@@ -174,5 +174,5 @@
         </LinearLayout>
     </LinearLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 

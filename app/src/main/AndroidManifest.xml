@@ -15,7 +15,7 @@
         android:theme="@style/Theme.MyApplication"
         >
 
-        <activity android:name=".loginActivity"
+        <activity android:name=".BaseActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -28,7 +28,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".SellfSelection"/>
         <activity android:name=".SelfSelection2"/>
-        <activity android:name=".BaseActivity" />
+        <activity android:name=".loginActivity" />
         <activity android:name=".Friend_list" />
         <activity android:name=".MiniGame" />
         <activity android:name=".MyPage" />

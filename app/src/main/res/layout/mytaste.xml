@@ -124,10 +124,10 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
 
+                android:fontFamily="@font/nanumsquareroundr"
                 android:gravity="center_vertical"
-                android:textSize="20sp"
-                android:fontFamily="@font/nanumsquareroundb"
-                android:text="테스트" />
+                android:text="테스트"
+                android:textSize="20sp" />
         </LinearLayout>
 
         <ImageView
@@ -156,13 +156,13 @@
                 android:id="@+id/sex_textview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fontFamily="@font/nanumsquareroundb"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
+                android:fontFamily="@font/nanumsquareroundr"
                 android:gravity="center_vertical"
 
-                android:textSize="20sp"
-                android:text="테스트" />
+                android:text="테스트"
+                android:textSize="20sp" />
         </LinearLayout>
 
         <ImageView
@@ -194,10 +194,10 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="50dp"
+                android:fontFamily="@font/nanumsquareroundr"
                 android:gravity="center_vertical"
-                android:fontFamily="@font/nanumsquareroundb"
-                android:textSize="20sp"
-                android:text="테스트" />
+                android:text="테스트"
+                android:textSize="20sp" />
 
         </LinearLayout>
 

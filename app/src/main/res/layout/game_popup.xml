@@ -48,7 +48,7 @@
         android:layout_marginTop="3dp"
         android:layout_marginRight="3dp"
         android:layout_marginBottom="3dp"
-        android:background="#F5BBAE"
+        android:background="@drawable/button"
         android:fontFamily="@font/nanumsquareroundb"
         android:text="링크 복사"
         android:textSize="10dp" />
