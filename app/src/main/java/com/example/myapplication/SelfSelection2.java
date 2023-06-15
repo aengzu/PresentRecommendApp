@@ -35,7 +35,7 @@ public class SelfSelection2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //상품추천 화면으로 이동
-                Intent intent = new Intent(SelfSelection2.this, RecommendationActivity.class);
+                Intent intent = new Intent(SelfSelection2.this, SelfSelection3.class);
                 startActivity(intent);
                 // 선택한 MBTI, age, sex 값 넘겨주기
                 intent.putExtra("MBTI", MBTI);

@@ -31,6 +31,8 @@
         <activity android:name=".loginActivity" />
         <activity android:name=".Friend_list" />
         <activity android:name=".MiniGame" />
+        <activity android:name=".SelfSelection3"/>
+
         <activity android:name=".MyPage" />
         <activity android:name=".giftBox" />
         <activity android:name=".gift_friend_n" />
