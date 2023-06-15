@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //밸런스게임 관련 자바클래스 만들고 수정하기
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.pttoapp.com/"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://hwaiiteam.com"));
                 startActivity(intent);
 
                 finish();
