@@ -24,7 +24,7 @@
 
     </androidx.appcompat.widget.Toolbar>
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton5"
+        android:id="@+id/appCompatButton_1"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.523" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton15"
+        android:id="@+id/appCompatButton_2"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.626" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton16"
+        android:id="@+id/appCompatButton_3"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -66,7 +66,7 @@
         app:layout_constraintVertical_bias="0.78" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton12"
+        android:id="@+id/appCompatButton_4"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -80,7 +80,7 @@
         app:layout_constraintVertical_bias="0.709" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton14"
+        android:id="@+id/appCompatButton_5"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -94,7 +94,7 @@
         app:layout_constraintVertical_bias="0.586" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton7"
+        android:id="@+id/appCompatButton_6"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -108,7 +108,7 @@
         app:layout_constraintVertical_bias="0.414" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton8"
+        android:id="@+id/appCompatButton_7"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -122,7 +122,7 @@
         app:layout_constraintVertical_bias="0.273" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton9"
+        android:id="@+id/appCompatButton_8"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -149,7 +149,7 @@
         app:layout_constraintVertical_bias="0.273" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton11"
+        android:id="@+id/appCompatButton_10"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -163,7 +163,7 @@
         app:layout_constraintVertical_bias="0.769" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton10"
+        android:id="@+id/appCompatButton_11"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -177,7 +177,7 @@
         app:layout_constraintVertical_bias="0.463" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+        android:id="@+id/appCompatButton_12"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -192,7 +192,7 @@
         app:layout_constraintVertical_bias="0.259" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton2"
+        android:id="@+id/appCompatButton_13"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -207,7 +207,7 @@
         app:layout_constraintVertical_bias="0.463" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton3"
+        android:id="@+id/appCompatButton_14"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:background="@drawable/circle_inactive"
@@ -229,7 +229,7 @@
         android:textAlignment="center"
         android:textColor="#898A8D"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton_12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -243,7 +243,7 @@
         android:fontFamily="@font/nanumsquareroundr"
         android:textAlignment="center"
         android:textSize="23sp"
-        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton_12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
@@ -260,7 +260,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appCompatButton12"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton_4"
         app:layout_constraintVertical_bias="0.82" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

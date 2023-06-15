@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,39 +26,29 @@ public class SignSurveyMytast extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_survey_mytaste);
 
-        Button circle = findViewById(R.id.appCompatButton1);
-        Button circle2 = findViewById(R.id.appCompatButton2);
-        Button circle3 = findViewById(R.id.appCompatButton3);
-        Button circle4 = findViewById(R.id.appCompatButton4);
-        Button circle5 = findViewById(R.id.appCompatButton5);
-        Button circle6 = findViewById(R.id.appCompatButton6);
-        Button circle7 = findViewById(R.id.appCompatButton7);
-        Button circle8 = findViewById(R.id.appCompatButton8);
-        Button circle9 = findViewById(R.id.appCompatButton9);
-        Button circle10 = findViewById(R.id.appCompatButton10);
-        Button circle11 = findViewById(R.id.appCompatButton11);
-        Button circle12 = findViewById(R.id.appCompatButton12);
-        Button circle13 = findViewById(R.id.appCompatButton13);
-        Button circle14 = findViewById(R.id.appCompatButton14);
+        Button circle1 = findViewById(R.id.appCompatButton_1);
+        Button circle2 = findViewById(R.id.appCompatButton_2);
+        Button circle3 = findViewById(R.id.appCompatButton_3);
+        Button circle4 = findViewById(R.id.appCompatButton_4);
+        Button circle5 = findViewById(R.id.appCompatButton_5);
+        Button circle6 = findViewById(R.id.appCompatButton_6);
+        Button circle7 = findViewById(R.id.appCompatButton_7);
+        Button circle8 = findViewById(R.id.appCompatButton_8);
+        Button circle9 = findViewById(R.id.appCompatButton_9);
+        Button circle10 = findViewById(R.id.appCompatButton_10);
+        Button circle11 = findViewById(R.id.appCompatButton_11);
+        Button circle12 = findViewById(R.id.appCompatButton_12);
+        Button circle13 = findViewById(R.id.appCompatButton_13);
+        Button circle14 = findViewById(R.id.appCompatButton_14);
         database = FirebaseDatabase.getInstance();
         reference = database.getReference();
 
         Button next = (Button) findViewById(R.id.nextbutton);
 
-        circle.setOnClickListener(new View.OnClickListener() {
+        circle1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                v.setSelected(!v.isSelected()); // 선택 여부 반전
-                if(set.contains(v.toString())){
-                    set.remove(v.toString());
-                }else {
-                    set.add(v.toString());
-                }
-            }
-        });
-        circle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                circle1.setBackgroundResource(R.drawable.circle_active);
                 v.setSelected(!v.isSelected()); // 선택 여부 반전
                 if(set.contains(v.toString())){
                     set.remove(v.toString());
@@ -69,6 +60,7 @@ public class SignSurveyMytast extends AppCompatActivity {
         circle2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                circle2.setBackgroundResource(R.drawable.circle_active);
                 v.setSelected(!v.isSelected()); // 선택 여부 반전
                 if(set.contains(v.toString())){
                     set.remove(v.toString());
@@ -80,6 +72,7 @@ public class SignSurveyMytast extends AppCompatActivity {
         circle3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                circle3.setBackgroundResource(R.drawable.circle_active);
                 v.setSelected(!v.isSelected()); // 선택 여부 반전
                 if(set.contains(v.toString())){
                     set.remove(v.toString());
@@ -91,6 +84,7 @@ public class SignSurveyMytast extends AppCompatActivity {
         circle4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                circle4.setBackgroundResource(R.drawable.circle_active);
                 v.setSelected(!v.isSelected()); // 선택 여부 반전
                 if(set.contains(v.toString())){
                     set.remove(v.toString());
@@ -102,6 +96,7 @@ public class SignSurveyMytast extends AppCompatActivity {
         circle5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                circle5.setBackgroundResource(R.drawable.circle_active);
                 v.setSelected(!v.isSelected()); // 선택 여부 반전
                 if(set.contains(v.toString())){
                     set.remove(v.toString());
@@ -110,7 +105,114 @@ public class SignSurveyMytast extends AppCompatActivity {
                 }
             }
         });
-
+        circle6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circle6.setBackgroundResource(R.drawable.circle_active);
+                v.setSelected(!v.isSelected()); // 선택 여부 반전
+                if(set.contains(v.toString())){
+                    set.remove(v.toString());
+                }else {
+                    set.add(v.toString());
+                }
+            }
+        });
+        circle7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circle7.setBackgroundResource(R.drawable.circle_active);
+                v.setSelected(!v.isSelected()); // 선택 여부 반전
+                if(set.contains(v.toString())){
+                    set.remove(v.toString());
+                }else {
+                    set.add(v.toString());
+                }
+            }
+        });
+        circle8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circle8.setBackgroundResource(R.drawable.circle_active);
+                v.setSelected(!v.isSelected()); // 선택 여부 반전
+                if(set.contains(v.toString())){
+                    set.remove(v.toString());
+                }else {
+                    set.add(v.toString());
+                }
+            }
+        });
+        circle9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circle9.setBackgroundResource(R.drawable.circle_active);
+                v.setSelected(!v.isSelected()); // 선택 여부 반전
+                if(set.contains(v.toString())){
+                    set.remove(v.toString());
+                }else {
+                    set.add(v.toString());
+                }
+            }
+        });
+        circle10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circle10.setBackgroundResource(R.drawable.circle_active);
+                v.setSelected(!v.isSelected()); // 선택 여부 반전
+                if(set.contains(v.toString())){
+                    set.remove(v.toString());
+                }else {
+                    set.add(v.toString());
+                }
+            }
+        });
+        circle11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circle11.setBackgroundResource(R.drawable.circle_active);
+                v.setSelected(!v.isSelected()); // 선택 여부 반전
+                if(set.contains(v.toString())){
+                    set.remove(v.toString());
+                }else {
+                    set.add(v.toString());
+                }
+            }
+        });
+        circle12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circle12.setBackgroundResource(R.drawable.circle_active);
+                v.setSelected(!v.isSelected()); // 선택 여부 반전
+                if(set.contains(v.toString())){
+                    set.remove(v.toString());
+                }else {
+                    set.add(v.toString());
+                }
+            }
+        });
+        circle13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circle13.setBackgroundResource(R.drawable.circle_active);
+                v.setSelected(!v.isSelected()); // 선택 여부 반전
+                if(set.contains(v.toString())){
+                    set.remove(v.toString());
+                }else {
+                    set.add(v.toString());
+                }
+            }
+        });
+        circle14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                circle14.setBackgroundResource(R.drawable.circle_active);
+                v.setSelected(!v.isSelected()); // 선택 여부 반전
+                if(set.contains(v.toString())){
+                    set.remove(v.toString());
+                }else {
+                    set.add(v.toString());
+                }
+            }
+        });
 
         //다음으로 버튼 클릭시 설문조사 -> 메인화면 이동
         next.setOnClickListener(new View.OnClickListener() {
