@@ -78,10 +78,10 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="200dp"
-                android:textSize="20sp"
-                android:gravity="center"
                 android:fontFamily="@font/nanumsquareroundb"
-                android:text="User 이름" />
+                android:gravity="center"
+                android:text="User 이름"
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/button"
@@ -106,7 +106,6 @@
             android:orientation="horizontal">
 
 
-
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
@@ -115,7 +114,7 @@
                 android:fontFamily="@font/nanumsquareroundb"
                 android:gravity="center_vertical"
                 android:text="나이"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/age_textview"
@@ -127,7 +126,7 @@
                 android:fontFamily="@font/nanumsquareroundr"
                 android:gravity="center_vertical"
                 android:text="테스트"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <ImageView
@@ -150,7 +149,7 @@
                 android:fontFamily="@font/nanumsquareroundr"
                 android:gravity="center_vertical"
                 android:text="성별"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/sex_textview"
@@ -162,7 +161,7 @@
                 android:gravity="center_vertical"
 
                 android:text="테스트"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <ImageView
@@ -185,7 +184,7 @@
                 android:fontFamily="@font/nanumsquareroundb"
                 android:gravity="center_vertical"
                 android:text="MBTI"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/mbti_textview"
@@ -197,7 +196,7 @@
                 android:fontFamily="@font/nanumsquareroundr"
                 android:gravity="center_vertical"
                 android:text="테스트"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -218,9 +217,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:textSize="20sp"
                 android:fontFamily="@font/nanumsquareroundb"
-                android:text="user name" />
+                android:text="user name"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/textView16"
@@ -230,7 +229,7 @@
                 android:fontFamily="@font/nanumsquareroundb"
                 android:gravity="center_vertical"
                 android:text=" 님의 취향"
-                android:textSize="20sp" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <TableLayout
@@ -253,7 +252,8 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/category"
                     android:padding="10dp"
-                    android:text="힙한" />
+                    android:text="힙한"
+                    android:textSize="12sp" />
 
                 <Button
                     android:id="@+id/button10"
@@ -262,7 +262,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/category"
-                    android:text="자취생" />
+                    android:text="자취생"
+                    android:textSize="12sp" />
 
                 <Button
                     android:id="@+id/button11"
@@ -271,7 +272,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/category"
-                    android:text="스타벅스" />
+                    android:text="스타벅스"
+                    android:textSize="12sp" />
             </TableRow>
 
 
@@ -289,7 +291,8 @@
                     android:layout_marginRight="10dp"
 
                     android:background="@drawable/category"
-                    android:text="상품권" />
+                    android:text="상품권"
+                    android:textSize="12sp" />
 
                 <Button
                     android:id="@+id/button15"
@@ -299,7 +302,8 @@
                     android:layout_marginRight="10dp"
 
                     android:background="@drawable/category"
-                    android:text="활발한" />
+                    android:text="활발한"
+                    android:textSize="12sp" />
             </TableRow>
         </TableLayout>
 
@@ -319,7 +323,7 @@
             android:fontFamily="@font/nanumsquareroundb"
             android:gravity="center_vertical"
             android:text="받은 쪽지"
-            android:textSize="20sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

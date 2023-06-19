@@ -33,7 +33,7 @@ public class gift_friend_n extends AppCompatActivity {
         make_g.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.pttoapp.com/"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://hwaiiteam.com"));
                 startActivity(intent);
 
                 finish();

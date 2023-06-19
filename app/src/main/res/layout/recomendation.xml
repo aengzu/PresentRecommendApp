@@ -7,7 +7,7 @@
 
     <Button
         android:id="@+id/btn_login4"
-        android:layout_width="183dp"
+        android:layout_width="150dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="32dp"
@@ -21,13 +21,13 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.168"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent="0.8" />
 
     <Button
         android:id="@+id/btn_login2"
-        android:layout_width="183dp"
+        android:layout_width="150dp"
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="32dp"
@@ -42,7 +42,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintHorizontal_bias="0.865"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintWidth_percent="0.8" />
 

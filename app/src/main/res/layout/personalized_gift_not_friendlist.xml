@@ -53,7 +53,7 @@
         android:paddingLeft="30dp"
         android:text="     직접 정보 고르고\n     맞춤형 선물 받기"
 
-        android:textSize="25sp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -73,13 +73,13 @@
         android:paddingLeft="30dp"
         android:paddingRight="50dp"
         android:text="    밸런스 게임 보내서\n    상대 취향 알아내기"
-        android:textSize="25sp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintVertical_bias="0.555" />
 
     <ImageView
         android:id="@+id/imageView"
