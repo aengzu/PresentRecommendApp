@@ -12,19 +12,20 @@
         android:id="@+id/toolbar"
         android:layout_width="410dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:elevation="4dp"
         app:contentInsetStartWithNavigation="0dp"
-        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.001">
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/backButton"
             android:layout_width="24dp"
+            android:layout_marginLeft="20dp"
             android:layout_height="24dp"
             android:contentDescription="뒤로 가기"
             android:src="@drawable/go_back_btn" />
@@ -35,8 +36,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:text="취향 설정"
             android:fontFamily="@font/nanumsquareroundb"
+            android:text="취향 설정"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:textStyle="bold" />

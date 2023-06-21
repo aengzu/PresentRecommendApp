@@ -17,6 +17,7 @@
         <ImageView
             android:id="@+id/backButton"
             android:layout_width="24dp"
+            android:layout_marginLeft="20dp"
             android:layout_height="24dp"
             android:src="@drawable/go_back_btn"
             android:contentDescription="뒤로 가기" />

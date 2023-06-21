@@ -19,6 +19,7 @@
             android:id="@+id/backButton"
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:layout_marginLeft="20dp"
             android:src="@drawable/go_back_btn"
             android:contentDescription="뒤로 가기" />
 
@@ -157,7 +158,7 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toEndOf="@+id/editTextAge"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.566" />
