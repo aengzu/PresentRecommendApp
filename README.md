@@ -18,9 +18,6 @@ https://www.figma.com/file/wcRkzTPOkthKroth12fEVT/%ED%99%94%EC%9D%B4%ED%8C%80-(C
 <img width="762" alt="스크린샷 2023-11-29 오전 11 32 29" src="https://github.com/aengzu/PresentRecommendApp/assets/102356873/ea2e661d-0547-4193-9443-ed3ddc1784ef">
 
 
-## 📂 발표 자료
-발표 자료 : https://docs.google.com/presentation/d/1Hc80SmCDrR22Th_rr-JIQD7z72OWD5Hq/edit?usp=drive_link&ouid=117128344447674104337&rtpof=true&sd=true
-
 ## 📌 참고 링크
 - 참고 링크 : https://github.com/aengzu/DirectBalancegame
 - 참고 링크2 : https://github.com/aengzu/RecommendApp_Web
